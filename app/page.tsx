@@ -1,20 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import AsciiSpeechBubble from "@/components/speech-bubble";
+import "./page.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <AsciiSpeechBubble />
-        <Image
-          className={styles.unicorn}
-          src="/unicorn_baby.gif"
-          alt="A pink unicorn  is flying"
-          width={200}
-          height={200}
-          priority
-        />
+    <div className="page">
+      <main className="main">
+        <Link href="/pixel">Go to Pixel Page</Link>
       </main>
     </div>
   );
