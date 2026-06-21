@@ -7,9 +7,13 @@ export const PortfolioModal = ({ ...props }: PortfolioModalProps) => {
     <Modal title="Portfolio" {...props}>
       <div>
         <p>
-          I&apos;m the Apps Lead Engineer at Croissant. Download the app and
-          take a look at my work.
+          Over the past four years I&apos;ve helped build the customer-facing
+          web and mobile experience for Croissant, a fintech platform focused on
+          empowering intentional commerce through resale. My work has spanned
+          product development, frontend architecture, mobile applications,
+          engineering leadership, and team growth.
         </p>
+        <p>Download the Croissant app to see a sample of my work!</p>
       </div>
     </Modal>
   );
