@@ -7,32 +7,20 @@ export const AboutMeModal = ({ ...props }: AboutMeModalProps) => {
     <Modal title="About Me" {...props}>
       <div>
         <p>
-          I&apos;m a Lead Frontend Engineer with a passion for building
-          thoughtful, user-centered products. Over the past four years,
-          I&apos;ve helped scale a fintech startup from an early-stage product
-          into a mature platform used by thousands of customers, leading
-          development across web and mobile applications built with React, React
-          Native, and TypeScript.
+          Hi! I&apos;m a Frontend Software Engineer with 6 years of experience
+          in Web, Extension and Mobile development. In addition, my background
+          as a former teacher has given me a strong UX skillset that I apply to
+          building accessible and user-friendly digital experiences.
         </p>
         <p>
-          My work sits at the intersection of product, design, and engineering.
-          I enjoy translating complex business requirements into intuitive user
-          experiences, designing maintainable frontend architectures, and
-          establishing engineering practices that help teams move quickly
-          without sacrificing quality.
+          Throughout my career, I&apos;ve enjoyed working in startup
+          environments. I really enjoy taking on a high level of ownership,
+          working with cross-functional teams, and driving both product and
+          technical initiatives forward.
         </p>
         <p>
-          Throughout my career I&apos;ve worn many hats—individual contributor,
-          technical lead, mentor, and engineering manager. Whether I&apos;m
-          building a new feature, defining frontend architecture, improving
-          developer experience, or collaborating with stakeholders, I&apos;m
-          motivated by creating products that solve real problems and deliver
-          meaningful value to users.
-        </p>
-        <p>
-          I thrive in startup environments where ownership is high, ambiguity is
-          common, and engineers have the opportunity to shape both the product
-          and the technical direction of the company.
+          When I&apos;m not writing code I&apos;m likely reading, figure
+          skating, or singing with my band QUIET TIME!
         </p>
       </div>
     </Modal>
