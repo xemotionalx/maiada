@@ -1,11 +1,39 @@
 import "./page.css";
-import Link from "next/link";
+import Image from "next/image";
+import CoffeeButton from "@/components/home/coffee";
+import CroissantButton from "@/components/home/croissant";
+import HeadphonesButton from "@/components/home/headphones";
+import NotebookButton from "@/components/home/notebook";
 
 export default function Home() {
   return (
     <div className="page">
       <main className="main">
-        <Link href="/pixel">Go to Pixel Page</Link>
+        <h1 className="title">MaiAda Carpano</h1>
+        <div className="table">
+          <div className="table-inner">
+            <CroissantButton />
+            <CoffeeButton />
+            <Image
+              src="/images/table.png"
+              alt="cute table with checkered cloth"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        </div>
+        <div className="chair">
+          <div className="chair-inner">
+            <NotebookButton />
+            <HeadphonesButton />
+            <Image
+              src="/images/chair.png"
+              alt="cute chair near the table"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        </div>
       </main>
     </div>
   );

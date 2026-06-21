@@ -1,142 +1,140 @@
 .page {
-  width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
-}
-
-.main {
+  height: 100dvh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
-.pixel-container {
-  width: 250px;
-  height: 250px;
-  background-color: rgba(196, 160, 203, 1);
+.main {
+  position: relative;
+  height: 98%;
+  width: 115rem;
 }
 
-/* 940095 = purple */
-/* D9A390 = light brown */
-.pixel {
-  width: 10px;
-  height: 10px;
-  box-shadow:
-  10px 10px black,
-  20px 10px black,
-  70px 10px black,
-  80px 10px black,
+.picture-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 180ms ease, filter 180ms ease;
+}
 
-  1px 20px black,
-  10px 20px #940095,
-  20px 20px #940095,
-  30px 20px black,
-  60px 20px black,
-  70px 20px pink,
-  80px 20px pink,
-  90px 20px black,
+.picture-button:hover {
+  transform: translate(-0%, -2%) rotate(3deg);
+}
 
-   1px 30px black,
-  10px 30px #940095,
-  20px 30px #940095,
-  30px 30px black,
-  60px 30px black,
-  70px 30px pink,
-  80px 30px pink,
-  90px 30px black,
+/* .picture-button:hover {
+  transform: translateY(2px) rotate(-3deg);
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.18));
+} */
 
-  1px 40px black,
-  10px 40px black,
-  20px 40px black,
-  30px 40px #940095,
-  40px 40px #940095,
-  50px 40px pink,
-  60px 40px pink,
-  70px 40px black,
-  80px 40px black,
-  90px 40px black,
+/* .picture-button:active {
+  animation: button-wiggle 220ms ease-in-out;
+} */
 
-  10px 50px black,
-  20px 50px black,
-  30px 50px #D9A390,
-  40px 50px #D9A390,
-  50px 50px #D9A390,
-  60px 50px #D9A390,
-  70px 50px black,
-  80px 50px black,
+/* @keyframes button-wiggle {
+  0% {
+    transform: translateY(-2px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-2px) rotate(6deg);
+  }
+  50% {
+    transform: translateY(-2px) rotate(-6deg);
+  }
+  75% {
+    transform: translateY(-2px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(-2px) rotate(0deg);
+  }
+} */
 
-  10px 60px black,
-  20px 60px #D9A390,
-  30px 60px #D9A390,
-  40px 60px #D9A390,
-  50px 60px #D9A390,
-  60px 60px #D9A390,
-  70px 60px #D9A390,
-  80px 60px black,
+.title {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.2rem;
+  font-style: italic;
+  color: #faf9f6;
+  -webkit-text-stroke: .8px #3594d8;
+}
 
-  10px 70px black,
-  20px 70px #D9A390,
-  30px 70px black,
-  40px 70px #D9A390,
-  50px 70px #D9A390,
-  60px 70px black,
-  70px 70px #D9A390,
-  80px 70px black,
+.table {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  height: 45rem;
+  width: 45rem;
+}
 
-  10px 80px black,
-  20px 80px #D9A390,
-  30px 80px black,
-  40px 80px #D9A390,
-  50px 80px #D9A390,
-  60px 80px black,
-  70px 80px #D9A390,
-  80px 80px black,
+.table-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-  10px 90px black,
-  20px 90px #D9A390,
-  30px 90px #D9A390,
-  40px 90px #D9A390,
-  50px 90px #D9A390,
-  60px 90px #D9A390,
-  70px 90px #D9A390,
-  80px 90px black,
+.coffee {
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  height: 7.875rem;
+  width: 7.875rem;
+  filter: drop-shadow(0 0 12px rgba(63, 63, 101, 0.8));
+  z-index: 1;
+}
 
-  20px 100px black,
-  30px 100px #D9A390,
-  40px 100px #D9A390,
-  50px 100px #D9A390,
-  60px 100px #D9A390,
-  70px 100px black,
+.croissant {
+  position: absolute;
+  top: 3%;
+  left: 45%;
+  height: 13.5rem;
+  width: 20.25rem;
+  filter: drop-shadow(0 0 12px rgba(63, 63, 101, 0.8));
+  z-index: 1;
+}
 
-  30px 110px black,
-  40px 110px black,
-  50px 110px black,
-  60px 110px black,
+.chair {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  height: 33.75rem;
+  width: 22.5rem;
+}
 
+.chair-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-  10px 120px black,
-  20px 120px black,
-  30px 120px darkgray,
-  40px 120px darkgray,
-  50px 120px darkgray,
-  60px 120px darkgray,
-  70px 120px black,
-  80px 120px black,
+.notebook {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  transform: rotate(280deg);
+  height: 11.25rem;
+  width: 11.25rem;
+  filter: drop-shadow(0 0 12px rgba(63, 63, 101, 0.8));
+  z-index: 1;
+}
 
-  1px 130px black,
-  10px 130px darkgray,
-  20px 130px darkgray,
-  30px 130px darkgray,
-  40px 130px darkgray,
-  50px 130px darkgray,
-  60px 130px darkgray,
-  70px 130px darkgray,
-  80px 130px darkgray,
-  90px 130px black
+.notebook:hover {
+  transform: rotate(270deg);
+}
 
-
-
-  ;
-
+.headphones {
+  position: absolute;
+  top: -0%;
+  right: -15%;
+  transform: rotate(20deg);
+  height: 11.25rem;
+  width: 11.25rem;
+  filter: drop-shadow(0 0 12px rgba(63, 63, 101, 0.8));
+  z-index: 1;
 }
