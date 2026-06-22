@@ -1,14 +1,15 @@
 "use client";
 
 import { type ReactNode, useEffect } from "react";
-import "./style.css";
+import "./modal.css";
+import Image from "next/image";
 
 export type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
   title?: string;
+  image?: string;
   children: ReactNode;
-  className?: string;
   closeOnBackdropClick?: boolean;
 };
 
@@ -16,8 +17,8 @@ export default function Modal({
   isOpen,
   onClose,
   title,
+  image,
   children,
-  className,
   closeOnBackdropClick = true,
 }: ModalProps) {
   useEffect(() => {
@@ -35,9 +36,6 @@ export default function Modal({
 
   if (!isOpen) return null;
 
-  const modalClassName = className
-    ? `home-modal-panel ${className}`
-    : "home-modal-panel";
 
   return (
     <div
@@ -49,26 +47,33 @@ export default function Modal({
         }
       }}
     >
-      <section
-        className={modalClassName}
-        role="dialog"
-        aria-modal="true"
-        aria-label={title ?? "Dialog"}
-        onClick={(event) => event.stopPropagation()}
-      >
-        <header className="home-modal-header">
-          {title ? <h2 className="home-modal-title">{title}</h2> : <div />}
-          <button
-            type="button"
-            className="home-modal-close"
-            onClick={onClose}
-            aria-label="Close dialog"
-          >
-            x
-          </button>
-        </header>
-        <div className="home-modal-content">{children}</div>
-      </section>
+      <div className="home-modal-frame gingham-red">
+        <section
+          className="home-modal-panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label={title ?? "Dialog"}
+          onClick={(event) => event.stopPropagation()}
+        >
+          {image && (
+            <div className="home-modal-image-frame gingham-red">
+              <Image
+                className="home-modal-image"
+                src={image}
+                alt={title ?? "Dialog"}
+                width={100}
+                height={100}
+              />
+            </div>
+          )}
+          <div className="home-modal-content">
+            <header className="home-modal-header">
+              <h2 className="home-modal-title">{title}</h2>
+            </header>
+            {children}
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

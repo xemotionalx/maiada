@@ -1,10 +1,12 @@
-import Modal, { type ModalProps } from "./modal";
+
+import Modal, { ModalProps } from "./modal";
+
 
 type PortfolioModalProps = Omit<ModalProps, "children">;
 
 export const PortfolioModal = ({ ...props }: PortfolioModalProps) => {
   return (
-    <Modal title="Portfolio" {...props}>
+    <Modal  title="Portfolio" {...props}>
       <div>
         <p>
           Over the past four years I&apos;ve lead the frontend build for the

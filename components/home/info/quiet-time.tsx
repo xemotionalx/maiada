@@ -1,10 +1,11 @@
-import Modal, { type ModalProps } from "./modal";
+import ModalBasic, { ModalBasicProps } from "@/components/ui/ModalBasic";
 
-type QuietTimeModalProps = Omit<ModalProps, "children">;
+
+type QuietTimeModalProps = Omit<ModalBasicProps, "children">;
 
 export const QuietTimeModal = ({ ...props }: QuietTimeModalProps) => {
   return (
-    <Modal title="QUIET TIME" {...props}>
+    <ModalBasic title="QUIET TIME" {...props}>
       <div>
         <iframe
           title="Quiet Time album"
@@ -16,6 +17,6 @@ export const QuietTimeModal = ({ ...props }: QuietTimeModalProps) => {
           loading="lazy"
         />
       </div>
-    </Modal>
+    </ModalBasic>
   );
 };

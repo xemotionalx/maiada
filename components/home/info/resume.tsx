@@ -1,4 +1,5 @@
-import Modal, { type ModalProps } from "./modal";
+import Modal, { ModalProps } from "./modal";
+
 
 type ResumeModalProps = Omit<ModalProps, "children">;
 
