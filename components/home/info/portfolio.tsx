@@ -1,5 +1,6 @@
 
 import Modal, { ModalProps } from "./modal";
+import CroissantQRCode from "../CroissantQRCode";
 
 
 type PortfolioModalProps = Omit<ModalProps, "children">;
@@ -23,8 +24,9 @@ export const PortfolioModal = ({ ...props }: PortfolioModalProps) => {
           >
             Croissant app
           </a>{" "}
-          to see a sample of my work!
+          to see a sample of my work:
         </p>
+        <CroissantQRCode />
       </div>
     </Modal>
   );

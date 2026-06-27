@@ -7,18 +7,11 @@ export const AboutMeModal = ({ ...props }: AboutMeModalProps) => {
     <Modal image="/images/maiada.jpeg" title="About Me" {...props}>
       <div>
         <p>
-          Hi! I&apos;m a Frontend Software Engineer with over 6 years of experience
-          in Web, Extension and Mobile development.
+          Hi! I&apos;m a Lead Frontend Software Engineer with over 6 years of experience building
+          consumer and enterprise products at early-stage startups.
         </p>
-        <p>My background
-          as a former teacher has given me a strong UX skillset that I apply to
-          building accessible and user-friendly digital experiences.</p>
-        <p>
-          Throughout my career, I&apos;ve enjoyed working in startups. 
-          From working closely with the design team to build out a custom design system, 
-          to collaborating with backend engineers to build end-to-end features, 
-          I value working in an environment where ownership is encouraged.
-        </p>
+        <p>I specialize in frontend architecture,
+        React Native, design systems, and leading cross-functional product development from concept through launch.</p>
         <p>
           When I&apos;m not writing code I&apos;m likely reading, figure
           skating, or singing with my band QUIET TIME.

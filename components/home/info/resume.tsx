@@ -7,16 +7,16 @@ export const ResumeModal = ({ ...props }: ResumeModalProps) => {
   return (
     <Modal title="Resume" {...props}>
       <div>
-        <p>Resume is coming soon...</p>
+        <p>You can download my resume <a href="pdfs/maiada-carpano-resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
         <p>
-          In the meantime you can check out my{" "}
+          You can also find me on{" "}
           <a
             href="https://www.linkedin.com/in/maiadac/"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
-          </a>
+          </a> or take a look at my <a href="https://github.com/xemotionalx" target="_blank" rel="noopener noreferrer">GitHub</a>.
           .
         </p>
       </div>
