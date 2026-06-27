@@ -216,10 +216,6 @@
     padding-right: 1.5rem;
   }
 
-  .home-modal-image-frame {
-    --modal-border-width: 0.4rem;
-  }
-
   .home-modal-panel:has(.home-modal-image-frame) .home-modal-content {
     padding-top: 3.5rem;
   }
