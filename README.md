@@ -1,1 +1,1 @@
-this is a cute little website with a lot of potential
+you can visit me at [maiada.com](https://maiada.com/)
