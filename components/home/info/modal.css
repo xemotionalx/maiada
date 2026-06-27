@@ -34,6 +34,18 @@
 	}
 }
 
+@keyframes home-modal-image-in-mobile {
+	from {
+		opacity: 0;
+		transform: translate(35%, -35%) scale(0.75);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(35%, -35%) scale(1);
+	}
+}
+
 @keyframes home-modal-content-in {
 	from {
 		opacity: 0;
@@ -165,11 +177,69 @@
 	animation: home-modal-content-in 0.4s ease-out 0.25s both;
 }
 
+@media (max-width: 764px) {
+  .home-modal-panel:has(.home-modal-image-frame) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .home-modal-image-frame {
+    top: 0;
+    right: 10rem;
+    left: auto;
+    transform: translate(35%, -35%);
+    animation: home-modal-image-in-mobile 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+  }
+
+  .home-modal-image {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .home-modal-panel:has(.home-modal-image-frame) .home-modal-content {
+    padding-top: 4.5rem;
+  }
+}
+
+@media (max-width: 569px) {
+  .home-modal-backdrop {
+    padding: 0.75rem;
+  }
+
+  .home-modal-panel:has(.home-modal-image-frame) {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .home-modal-panel:not(:has(.home-modal-image-frame)) {
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+  }
+
+  .home-modal-image-frame {
+    --modal-border-width: 0.4rem;
+  }
+
+  .home-modal-panel:has(.home-modal-image-frame) .home-modal-content {
+    padding-top: 3.5rem;
+  }
+
+  .home-modal-content {
+    padding: 0.625rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
 	.home-modal-backdrop,
 	.home-modal-frame,
 	.home-modal-image-frame,
 	.home-modal-content {
 		animation: none;
+	}
+}
+
+@media (max-width: 764px) and (prefers-reduced-motion: reduce) {
+	.home-modal-image-frame {
+		transform: translate(35%, -35%);
 	}
 }
