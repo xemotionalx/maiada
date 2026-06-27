@@ -1,7 +1,8 @@
 .main {
   position: relative;
   height: 98%;
-  width: 115rem;
+  width: min(115rem, 100%);
+  max-width: 100%;
 }
 
 .title {
