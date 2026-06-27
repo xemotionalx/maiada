@@ -17,7 +17,6 @@ export const ResumeModal = ({ ...props }: ResumeModalProps) => {
           >
             LinkedIn
           </a> or take a look at my <a href="https://github.com/xemotionalx" target="_blank" rel="noopener noreferrer">GitHub</a>.
-          .
         </p>
       </div>
     </Modal>

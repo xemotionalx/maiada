@@ -4,7 +4,7 @@ type AboutMeModalProps = Omit<ModalProps, "children" | "image" | "title">;
 
 export const AboutMeModal = ({ ...props }: AboutMeModalProps) => {
   return (
-    <Modal image="/images/maiada.jpeg" title="About Me" {...props}>
+    <Modal image="/images/maiada-edited.png" title="About Me" {...props}>
       <div>
         <p>
           Hi! I&apos;m a Lead Frontend Software Engineer with over 6 years of experience building
