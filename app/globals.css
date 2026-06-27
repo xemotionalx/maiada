@@ -2,6 +2,18 @@ html {
   font-size: 62.5%; /* 62.5% of 16px is 10px */
 }
 
+@media (max-width: 999px) {
+  html {
+    font-size: 56.25%; /* 9px — scales rem-based layout for mobile/tablet */
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 50%; /* 8px — tighter fit on small phones */
+  }
+}
+
 body {
   font-size: 1.6rem; /* 1.6 * 10px = 16px */
   /* background-color: #aec8db; */

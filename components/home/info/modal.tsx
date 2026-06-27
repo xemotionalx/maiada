@@ -1,6 +1,7 @@
 "use client";
 
 import { type ReactNode, useEffect } from "react";
+import { createPortal } from "react-dom";
 import "./modal.css";
 import Image from "next/image";
 
@@ -36,8 +37,7 @@ export default function Modal({
 
   if (!isOpen) return null;
 
-
-  return (
+  return createPortal(
     <div
       className="home-modal-backdrop"
       role="presentation"
@@ -74,6 +74,7 @@ export default function Modal({
           </div>
         </section>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { type ReactNode, useEffect } from "react";
+import { createPortal } from "react-dom";
 import "./modal-basic.css";
 
 export type ModalBasicProps = {
@@ -39,7 +40,7 @@ export default function ModalBasic({
     ? `basic-modal-panel ${className}`
     : "basic-modal-panel";
 
-  return (
+  return createPortal(
     <div
       className="basic-modal-backdrop"
       role="presentation"
@@ -69,6 +70,7 @@ export default function ModalBasic({
         </header>
         <div className="basic-modal-content">{children}</div>
       </section>
-    </div>
+    </div>,
+    document.body,
   );
 }

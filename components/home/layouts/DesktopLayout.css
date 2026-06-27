@@ -1,0 +1,46 @@
+.main {
+  position: relative;
+  height: 98%;
+  width: 115rem;
+}
+
+.title {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.2rem;
+  font-style: italic;
+  color: hsl(45, 29%, 97%);
+  -webkit-text-stroke: 0.8px #3594d8;
+}
+
+.table {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  height: 45rem;
+  width: 45rem;
+}
+
+.table-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.chair {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  height: 33.75rem;
+  width: 22.5rem;
+}
+
+.chair-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
