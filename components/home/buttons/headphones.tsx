@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import FadeInImage from "@/components/ui/FadeInImage";
 import { QuietTimeModal } from "@/components/home/info/quiet-time";
 import "./style.css";
 
@@ -17,10 +17,11 @@ export default function HeadphonesButton() {
       >
         <div className="button-inner">
           <span className="label headphones-label">my band</span>
-          <Image
+          <FadeInImage
             src="/images/headphones.png"
             alt="cute headphones on the table"
             fill
+            loading="lazy"
             style={{ objectFit: "cover" }}
           />
         </div>

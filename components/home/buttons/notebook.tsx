@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import FadeInImage from "@/components/ui/FadeInImage";
 import { ResumeModal } from "@/components/home/info/resume";
 import "./style.css";
 
@@ -17,10 +17,11 @@ export default function NotebookButton() {
       >
         <div className="button-inner">
           <span className="notebook-label">resume</span>
-          <Image
+          <FadeInImage
             src="/images/notebook.png"
             alt="cute notebook on the chair"
             fill
+            loading="lazy"
             style={{ objectFit: "cover" }}
           />
         </div>

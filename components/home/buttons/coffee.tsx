@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import FadeInImage from "@/components/ui/FadeInImage";
 import { AboutMeModal } from "@/components/home/info/about-me";
 import "./style.css";
 
@@ -17,10 +17,11 @@ export default function CoffeeButton() {
       >
         <div className="button-inner">
           <span className="label">about me</span>
-          <Image
+          <FadeInImage
             src="/images/coffee.png"
             alt="cute coffee on the table"
             fill
+            loading="lazy"
             style={{ objectFit: "cover" }}
           />
         </div>

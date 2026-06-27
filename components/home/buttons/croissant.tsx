@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import FadeInImage from "@/components/ui/FadeInImage";
 import { PortfolioModal } from "@/components/home/info/portfolio";
 import "./style.css";
 
@@ -23,10 +23,11 @@ export default function CroissantButton({
       >
         <div className="button-inner">
           <span className="label">portfolio</span>
-          <Image
+          <FadeInImage
             src={imageSrc}
             alt="cute croissant on the table"
             fill
+            loading="lazy"
             style={{ objectFit: "cover" }}
           />
         </div>

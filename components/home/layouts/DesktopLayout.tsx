@@ -1,4 +1,4 @@
-import Image from "next/image";
+import FadeInImage from "@/components/ui/FadeInImage";
 import CoffeeButton from "@/components/home/buttons/coffee";
 import CroissantButton from "@/components/home/buttons/croissant";
 import HeadphonesButton from "@/components/home/buttons/headphones";
@@ -13,10 +13,11 @@ export default function DesktopLayout() {
         <div className="table-inner">
           <CroissantButton />
           <CoffeeButton />
-          <Image
+          <FadeInImage
             src="/images/table.png"
             alt="cute table with checkered cloth"
             fill
+            priority
             style={{ objectFit: "cover" }}
           />
         </div>
@@ -25,10 +26,11 @@ export default function DesktopLayout() {
         <div className="chair-inner">
           <NotebookButton />
           <HeadphonesButton />
-          <Image
+          <FadeInImage
             src="/images/chair.png"
             alt="cute chair near the table"
             fill
+            priority
             style={{ objectFit: "cover" }}
           />
         </div>

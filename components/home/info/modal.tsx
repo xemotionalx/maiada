@@ -3,7 +3,7 @@
 import { type ReactNode, useEffect } from "react";
 import { createPortal } from "react-dom";
 import "./modal.css";
-import Image from "next/image";
+import FadeInImage from "@/components/ui/FadeInImage";
 
 export type ModalProps = {
   isOpen: boolean;
@@ -57,7 +57,7 @@ export default function Modal({
         >
           {image && (
             <div className="home-modal-image-frame gingham-red">
-              <Image
+              <FadeInImage
                 className="home-modal-image"
                 src={image}
                 alt={title ?? "Dialog"}
