@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import FadeInImage from "@/components/ui/FadeInImage";
-import { QuietTimeModal } from "@/components/home/info/quiet-time";
 import "./style.css";
+import { MediaModal } from "../info/media";
 
 export default function HeadphonesButton() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,19 +14,20 @@ export default function HeadphonesButton() {
         type="button"
         className="headphones picture-button"
         onClick={() => setIsOpen(true)}
+        aria-label="open media modal"
       >
         <div className="button-inner">
-          <span className="label headphones-label">my band</span>
+          <span className="label headphones-label">media</span>
           <FadeInImage
             src="/images/headphones.png"
-            alt="cute headphones on the table"
+            alt="headphones"
             fill
             loading="lazy"
             style={{ objectFit: "cover" }}
           />
         </div>
       </button>
-      <QuietTimeModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <MediaModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </>
   );
 }

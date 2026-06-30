@@ -14,7 +14,7 @@ export const AboutMeModal = ({ ...props }: AboutMeModalProps) => {
         React Native, design systems, and leading cross-functional product development from concept through launch.</p>
         <p>
           When I&apos;m not writing code I&apos;m likely reading, figure
-          skating, or singing with my band QUIET TIME.
+          skating, or singing with my band <a href="https://linktr.ee/quiettime" target="_blank" rel="noopener noreferrer">QUIET TIME</a>.
         </p>
       </div>
     </Modal>
